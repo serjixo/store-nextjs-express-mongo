@@ -1,0 +1,876 @@
+{
+  "id": "01f85e-335a-2c8-276e-d7ee734e812",
+  "type": "array",
+  "valueType": "array",
+  "children": [
+    {
+      "id": "d2236ac-7300-ae70-e5c5-d0dd48fd8d6f",
+      "type": "object",
+      "valueType": "object",
+      "children": [
+        {
+          "id": "386a56d-cee0-b12f-be2-8d063eab63a",
+          "type": "value",
+          "valueType": "uuid",
+          "children": [],
+          "repeatCount": [
+            "1",
+            "100"
+          ],
+          "fieldName": "_id",
+          "valueOptions": {},
+          "nullValue": "0",
+          "selectedDependencies": {}
+        },
+        {
+          "id": "55b034f-871c-a14-f672-03f3178e376c",
+          "type": "value",
+          "valueType": "string",
+          "children": [],
+          "repeatCount": [
+            "1",
+            "100"
+          ],
+          "fieldName": "productName",
+          "valueOptions": {
+            "minLength": "1",
+            "maxLength": "3",
+            "unit": "word"
+          },
+          "nullValue": "0",
+          "selectedDependencies": {}
+        },
+        {
+          "id": "6d40146-050a-2050-e364-0c0bea7bd8",
+          "type": "value",
+          "valueType": "string",
+          "children": [],
+          "repeatCount": [
+            "1",
+            "100"
+          ],
+          "fieldName": "description",
+          "valueOptions": {
+            "minLength": "10",
+            "maxLength": "30",
+            "unit": "word"
+          },
+          "nullValue": "0",
+          "selectedDependencies": {}
+        },
+        {
+          "id": "5e46ad6-fb10-ec56-8e2e-c3ddfa67cf",
+          "type": "value",
+          "valueType": "bool",
+          "children": [],
+          "repeatCount": [
+            "1",
+            "100"
+          ],
+          "fieldName": "active",
+          "valueOptions": {
+            "trueRatio": "70"
+          },
+          "nullValue": "0",
+          "selectedDependencies": {}
+        },
+        {
+          "id": "dd8abfd-542-1e70-1dd-50ab2448aa",
+          "type": "value",
+          "valueType": "number",
+          "children": [],
+          "repeatCount": [
+            "1",
+            "100"
+          ],
+          "fieldName": "maxTravellers",
+          "valueOptions": {
+            "min": {
+              "number": "2",
+              "checked": true
+            },
+            "max": {
+              "number": "15",
+              "checked": true
+            },
+            "decimals": "0",
+            "multipleOf": "0"
+          },
+          "nullValue": "50",
+          "selectedDependencies": {}
+        },
+        {
+          "id": "f1cf6e-d176-cebe-ed3d-0b1c1b810a82",
+          "type": "oneOf",
+          "valueType": "oneOf",
+          "children": [
+            {
+              "id": "f5e068f-db3a-3ff-7266-68e38853085",
+              "type": "value",
+              "valueType": "constant",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "",
+              "valueOptions": {
+                "text": "https://picsum.photos/200/300"
+              },
+              "nullValue": "0",
+              "selectedDependencies": {}
+            },
+            {
+              "id": "fad30e3-3efa-872c-6b1a-bdf65e80107f",
+              "type": "value",
+              "valueType": "constant",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "",
+              "valueOptions": {
+                "text": "https://picsum.photos/200"
+              },
+              "nullValue": "0",
+              "selectedDependencies": {}
+            },
+            {
+              "id": "05d6cb5-ed22-6c1-02a7-6272afb460f",
+              "type": "value",
+              "valueType": "constant",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "",
+              "valueOptions": {
+                "text": "https://picsum.photos/150"
+              },
+              "nullValue": "0",
+              "selectedDependencies": {}
+            },
+            {
+              "id": "e6c30ab-807c-1eb-55f3-0e26a20100",
+              "type": "value",
+              "valueType": "constant",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "",
+              "valueOptions": {
+                "text": "https://picsum.photos/300/400"
+              },
+              "nullValue": "0",
+              "selectedDependencies": {}
+            },
+            {
+              "id": "a306200-415b-ec67-6704-b0bb60781151",
+              "type": "value",
+              "valueType": "constant",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "",
+              "valueOptions": {
+                "text": "https://picsum.photos/300"
+              },
+              "nullValue": "0",
+              "selectedDependencies": {}
+            },
+            {
+              "id": "ef3747-b8dc-1852-635b-db75205584",
+              "type": "value",
+              "valueType": "constant",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "",
+              "valueOptions": {
+                "text": "https://picsum.photos/800/1000"
+              },
+              "nullValue": "0",
+              "selectedDependencies": {}
+            },
+            {
+              "id": "e1ea4ea-51a-2520-331f-2eb8edc4cadc",
+              "type": "value",
+              "valueType": "constant",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "",
+              "valueOptions": {
+                "text": "https://picsum.photos/1080"
+              },
+              "nullValue": "0",
+              "selectedDependencies": {}
+            },
+            {
+              "id": "80b6088-fc6-ea40-388-014bac013c8",
+              "type": "value",
+              "valueType": "constant",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "",
+              "valueOptions": {
+                "text": "https://picsum.photos/250/350"
+              },
+              "nullValue": "0",
+              "selectedDependencies": {}
+            },
+            {
+              "id": "50417af-1757-ba00-66f-cc00e46a5def",
+              "type": "value",
+              "valueType": "constant",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "",
+              "valueOptions": {
+                "text": "https://picsum.photos/400/500"
+              },
+              "nullValue": "0",
+              "selectedDependencies": {}
+            },
+            {
+              "id": "c368550-7cc3-be72-51e6-0422883714e6",
+              "type": "value",
+              "valueType": "constant",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "",
+              "valueOptions": {
+                "text": "https://picsum.photos/650/800"
+              },
+              "nullValue": "0",
+              "selectedDependencies": {}
+            }
+          ],
+          "repeatCount": [
+            "1",
+            "100"
+          ],
+          "fieldName": "imageUrl",
+          "valueOptions": {},
+          "nullValue": "10",
+          "selectedDependencies": {}
+        },
+        {
+          "id": "230fb02-ae5-0d32-f4c6-36510eaa76d",
+          "type": "oneOf",
+          "valueType": "oneOf",
+          "children": [
+            {
+              "id": "a7b7c6f-4fde-0c1a-a5ec-7310c63102",
+              "type": "value",
+              "valueType": "constant",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "",
+              "valueOptions": {
+                "text": "activity"
+              },
+              "nullValue": "0",
+              "selectedDependencies": {}
+            },
+            {
+              "id": "a0ef10-2fba-c3c6-a5ad-18437818f82",
+              "type": "value",
+              "valueType": "constant",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "",
+              "valueOptions": {
+                "text": "transport"
+              },
+              "nullValue": "0",
+              "selectedDependencies": {}
+            }
+          ],
+          "repeatCount": [
+            "1",
+            "100"
+          ],
+          "fieldName": "area",
+          "valueOptions": {},
+          "nullValue": "0",
+          "selectedDependencies": {}
+        },
+        {
+          "id": "d6ac1e-c4a-c7f1-c5b-221d072c38a8",
+          "type": "object",
+          "valueType": "object",
+          "children": [
+            {
+              "id": "4bf240-1e84-545c-cac4-d54bc4418",
+              "type": "value",
+              "valueType": "country",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "country",
+              "valueOptions": {
+                "format": "name"
+              },
+              "nullValue": "0",
+              "selectedDependencies": {}
+            },
+            {
+              "id": "d71d4d-224b-a582-227e-c8ae6d53b2a7",
+              "type": "value",
+              "valueType": "country",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "countryCode",
+              "valueOptions": {
+                "format": "code"
+              },
+              "nullValue": "0",
+              "selectedDependencies": {}
+            },
+            {
+              "id": "856323-41-40a7-18c8-cf8c50ba6",
+              "type": "value",
+              "valueType": "timeZone",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "timeZone",
+              "valueOptions": {},
+              "nullValue": "0",
+              "selectedDependencies": {
+                "country": {
+                  "fieldName": "Auto",
+                  "indexPath": "*",
+                  "fieldNamePath": [],
+                  "id": null,
+                  "displayPath": "*"
+                }
+              }
+            },
+            {
+              "id": "f23c8ee-145d-f4d6-265f-6464aa3bff",
+              "type": "value",
+              "valueType": "city",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "city",
+              "valueOptions": {
+                "country": "any"
+              },
+              "nullValue": "0",
+              "selectedDependencies": {
+                "country": {
+                  "fieldName": "Auto",
+                  "indexPath": "*",
+                  "fieldNamePath": [],
+                  "id": null,
+                  "displayPath": "*"
+                }
+              }
+            }
+          ],
+          "repeatCount": [
+            "1",
+            "100"
+          ],
+          "fieldName": "location",
+          "valueOptions": {},
+          "nullValue": "0",
+          "selectedDependencies": {}
+        },
+        {
+          "id": "71baa8f-f274-e16a-f2c5-8bb14181e3f",
+          "type": "object",
+          "valueType": "object",
+          "children": [
+            {
+              "id": "770e365-7208-32e8-d8d3-241b7b142dc8",
+              "type": "value",
+              "valueType": "time",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "timeStart",
+              "valueOptions": {
+                "min": "00:00",
+                "max": "23:59",
+                "format": "HH:mm"
+              },
+              "nullValue": "0",
+              "selectedDependencies": {}
+            },
+            {
+              "id": "7adc02-5a0-b8d3-7433-6b51173b3ed",
+              "type": "value",
+              "valueType": "number",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "duration",
+              "valueOptions": {
+                "min": {
+                  "number": "15",
+                  "checked": true
+                },
+                "max": {
+                  "number": "360",
+                  "checked": true
+                },
+                "decimals": "0",
+                "multipleOf": "5"
+              },
+              "nullValue": "0",
+              "selectedDependencies": {}
+            }
+          ],
+          "repeatCount": [
+            "1",
+            "100"
+          ],
+          "fieldName": "productInfo",
+          "valueOptions": {},
+          "nullValue": "0",
+          "selectedDependencies": {}
+        },
+        {
+          "id": "4c6c81-58ec-3aef-fb0-2c5b14c523a",
+          "type": "object",
+          "valueType": "object",
+          "children": [
+            {
+              "id": "beac3c-3ef8-21-056-65cbb157b821",
+              "type": "value",
+              "valueType": "companyName",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "name",
+              "valueOptions": {
+                "type": "fake"
+              },
+              "nullValue": "0",
+              "selectedDependencies": {}
+            },
+            {
+              "id": "43742be-a3a-441c-45e3-8ec66e408d4",
+              "type": "value",
+              "valueType": "streetAddress",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "address",
+              "valueOptions": {},
+              "nullValue": "0",
+              "selectedDependencies": {}
+            },
+            {
+              "id": "d3bc43a-c360-20a-d507-edc2aa223e58",
+              "type": "value",
+              "valueType": "email",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "email",
+              "valueOptions": {},
+              "nullValue": "0",
+              "selectedDependencies": {
+                "firstName": {
+                  "fieldName": "Auto",
+                  "indexPath": "*",
+                  "fieldNamePath": [],
+                  "id": null,
+                  "displayPath": "*"
+                },
+                "lastName": {
+                  "fieldName": "Auto",
+                  "indexPath": "*",
+                  "fieldNamePath": [],
+                  "id": null,
+                  "displayPath": "*"
+                },
+                "fullName": {
+                  "fieldName": "Auto",
+                  "indexPath": "*",
+                  "fieldNamePath": [],
+                  "id": null,
+                  "displayPath": "*"
+                },
+                "companyName": {
+                  "fieldName": "Auto",
+                  "indexPath": "*",
+                  "fieldNamePath": [],
+                  "id": null,
+                  "displayPath": "*"
+                }
+              }
+            },
+            {
+              "id": "523cfb-3bab-b6a0-05f-0ea1d86134f",
+              "type": "value",
+              "valueType": "url",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "url",
+              "valueOptions": {},
+              "nullValue": "0",
+              "selectedDependencies": {
+                "domainName": {
+                  "fieldName": "Auto",
+                  "indexPath": "*",
+                  "fieldNamePath": [],
+                  "id": null,
+                  "displayPath": "*"
+                },
+                "companyName": {
+                  "fieldName": "Auto",
+                  "indexPath": "*",
+                  "fieldNamePath": [],
+                  "id": null,
+                  "displayPath": "*"
+                },
+                "domainSuffix": {
+                  "fieldName": "Auto",
+                  "indexPath": "*",
+                  "fieldNamePath": [],
+                  "id": null,
+                  "displayPath": "*"
+                }
+              }
+            }
+          ],
+          "repeatCount": [
+            "1",
+            "100"
+          ],
+          "fieldName": "provider",
+          "valueOptions": {},
+          "nullValue": "0",
+          "selectedDependencies": {}
+        },
+        {
+          "id": "ec4164a-21b-e580-3ce4-b30e31d0f4bc",
+          "type": "object",
+          "valueType": "object",
+          "children": [
+            {
+              "id": "eae4d01-60f0-172-d053-e8c13702767e",
+              "type": "value",
+              "valueType": "dateTime",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "from",
+              "valueOptions": {
+                "min": "2023-01-01",
+                "max": "2023-06-30",
+                "format": "YYYY-MM-DD"
+              },
+              "nullValue": "0",
+              "selectedDependencies": {}
+            },
+            {
+              "id": "3e40e2-e567-c41c-f04-de48b6620d4",
+              "type": "value",
+              "valueType": "dateTime",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "to",
+              "valueOptions": {
+                "min": "2022-07-01",
+                "max": "2023-12-31",
+                "format": "YYYY-MM-DD"
+              },
+              "nullValue": "0",
+              "selectedDependencies": {}
+            }
+          ],
+          "repeatCount": [
+            "1",
+            "100"
+          ],
+          "fieldName": "schedule",
+          "valueOptions": {},
+          "nullValue": "0",
+          "selectedDependencies": {}
+        },
+        {
+          "id": "152507-fc47-c552-135b-8f32686ce3b8",
+          "type": "object",
+          "valueType": "object",
+          "children": [
+            {
+              "id": "1cd020-dde-6d53-aae3-12e7018eb",
+              "type": "object",
+              "valueType": "object",
+              "children": [
+                {
+                  "id": "2b8aad2-3046-2afd-2d11-add3d5b8736",
+                  "type": "value",
+                  "valueType": "constant",
+                  "children": [],
+                  "repeatCount": [
+                    "1",
+                    "100"
+                  ],
+                  "fieldName": "maxAge",
+                  "valueOptions": {
+                    "text": "3"
+                  },
+                  "nullValue": "0",
+                  "selectedDependencies": {}
+                },
+                {
+                  "id": "2c8880d-bbbd-dec-bb31-4c64cf4c43",
+                  "type": "value",
+                  "valueType": "money",
+                  "children": [],
+                  "repeatCount": [
+                    "1",
+                    "100"
+                  ],
+                  "fieldName": "price",
+                  "valueOptions": {
+                    "min": {
+                      "number": "0",
+                      "checked": true
+                    },
+                    "max": {
+                      "number": "50",
+                      "checked": true
+                    },
+                    "currency": "USD"
+                  },
+                  "nullValue": "0",
+                  "selectedDependencies": {}
+                }
+              ],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "Toddler",
+              "valueOptions": {},
+              "nullValue": "0",
+              "selectedDependencies": {}
+            },
+            {
+              "id": "40ce62-2ef7-5bdd-3dc7-4802273876e",
+              "type": "object",
+              "valueType": "object",
+              "children": [
+                {
+                  "id": "5d7ea4e-1bee-7b42-68c5-3f23f35a2",
+                  "type": "value",
+                  "valueType": "constant",
+                  "children": [],
+                  "repeatCount": [
+                    "1",
+                    "100"
+                  ],
+                  "fieldName": "maxAge",
+                  "valueOptions": {
+                    "text": "5"
+                  },
+                  "nullValue": "0",
+                  "selectedDependencies": {}
+                },
+                {
+                  "id": "f2cac81-4857-3dfb-205-713687edf0b",
+                  "type": "value",
+                  "valueType": "money",
+                  "children": [],
+                  "repeatCount": [
+                    "1",
+                    "100"
+                  ],
+                  "fieldName": "price",
+                  "valueOptions": {
+                    "min": {
+                      "number": "50",
+                      "checked": true
+                    },
+                    "max": {
+                      "number": "100",
+                      "checked": true
+                    },
+                    "currency": "USD"
+                  },
+                  "nullValue": "0",
+                  "selectedDependencies": {}
+                }
+              ],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "preschool",
+              "valueOptions": {},
+              "nullValue": "0",
+              "selectedDependencies": {}
+            },
+            {
+              "id": "7a124e5-357-5533-8e24-52676f1664",
+              "type": "object",
+              "valueType": "object",
+              "children": [
+                {
+                  "id": "5dcadfe-08df-a10a-4d2a-5a7537e62a",
+                  "type": "value",
+                  "valueType": "null",
+                  "children": [],
+                  "repeatCount": [
+                    "1",
+                    "100"
+                  ],
+                  "fieldName": "maxAge",
+                  "valueOptions": {},
+                  "nullValue": "0",
+                  "selectedDependencies": {}
+                },
+                {
+                  "id": "40b1313-4b0d-cd7a-63ad-5c84f006e57",
+                  "type": "value",
+                  "valueType": "money",
+                  "children": [],
+                  "repeatCount": [
+                    "1",
+                    "100"
+                  ],
+                  "fieldName": "price",
+                  "valueOptions": {
+                    "min": {
+                      "number": "100",
+                      "checked": true
+                    },
+                    "max": {
+                      "number": "1000",
+                      "checked": true
+                    },
+                    "currency": "USD"
+                  },
+                  "nullValue": "0",
+                  "selectedDependencies": {}
+                }
+              ],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "adult",
+              "valueOptions": {},
+              "nullValue": "0",
+              "selectedDependencies": {}
+            }
+          ],
+          "repeatCount": [
+            "1",
+            "3"
+          ],
+          "fieldName": "rates",
+          "valueOptions": {},
+          "nullValue": "0",
+          "selectedDependencies": {}
+        },
+        {
+          "id": "04f76c-44ff-6842-fe4f-ea760480bed",
+          "type": "array",
+          "valueType": "array",
+          "children": [
+            {
+              "id": "6db54fd-e838-56ee-26d2-4a4e6a2727d",
+              "type": "value",
+              "valueType": "vehicleModel",
+              "children": [],
+              "repeatCount": [
+                "1",
+                "100"
+              ],
+              "fieldName": "",
+              "valueOptions": {},
+              "nullValue": "0",
+              "selectedDependencies": {}
+            }
+          ],
+          "repeatCount": [
+            "1",
+            "5"
+          ],
+          "fieldName": "tags",
+          "valueOptions": {},
+          "nullValue": "25",
+          "selectedDependencies": {}
+        }
+      ],
+      "repeatCount": [
+        "1",
+        "100"
+      ],
+      "fieldName": "",
+      "valueOptions": {},
+      "nullValue": "0",
+      "selectedDependencies": {}
+    }
+  ],
+  "repeatCount": [
+    "1",
+    "2000"
+  ],
+  "fieldName": "",
+  "valueOptions": {},
+  "nullValue": "0",
+  "selectedDependencies": {}
+}
