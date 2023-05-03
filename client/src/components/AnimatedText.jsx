@@ -1,5 +1,4 @@
-import React from "react";
-import {motion} from "framer-motion";
+import {motion} from 'framer-motion';
 
 export const AnimatedText = ({text}) => {
     const letters = Array.from(text);
@@ -18,7 +17,7 @@ export const AnimatedText = ({text}) => {
             x: 0,
             y: 0,
             transition: {
-                type: "spring",
+                type: 'spring',
                 damping: 12,
                 stiffness: 100,
             },
@@ -28,7 +27,7 @@ export const AnimatedText = ({text}) => {
             x: -20,
             y: 10,
             transition: {
-                type: "spring",
+                type: 'spring',
                 damping: 12,
                 stiffness: 100,
             },
@@ -37,14 +36,14 @@ export const AnimatedText = ({text}) => {
 
     return (
         <motion.div
-            style={{overflow: "hidden", display: "flex", fontSize: "2rem"}}
+            style={{overflow: 'hidden', display: 'flex', fontSize: '2rem'}}
             variants={container}
-            initial="hidden"
-            animate="visible"
+            initial='hidden'
+            animate='visible'
         >
             {letters.map((letter, index) => (
                 <motion.span  className={'head-text-sub'} variants={child} key={index}>
-                    {letter === " " ? "\u00A0" : letter}
+                    {letter === ' ' ? '\u00A0' : letter}
                 </motion.span>
             ))}
         </motion.div>

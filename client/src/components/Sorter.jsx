@@ -1,6 +1,5 @@
 import {useState} from 'react';
-import paginationState from "@component/store/PaginationStore";
-// import { fetchProducts } from '../api/products';
+import paginationState from '@component/store/PaginationStore';
 
 export default function Sorter({onUpdate}) {
     const [sortProperty, setSortProperty] = useState('productName');
@@ -15,12 +14,12 @@ export default function Sorter({onUpdate}) {
     }
 
     return (
-        <div className="flex justify-center items-center space-x-4">
-            <label htmlFor="sort-property " className="font-bold text-white">
+        <div className='flex justify-center items-center space-x-4'>
+            <label htmlFor='sort-property ' className='font-bold text-white'>
                 Sort by:
             </label>
             <select
-                id="sort-property"
+                id='sort-property'
                 value={sortProperty}
                 onChange={e => setSortProperty(e.target.value)}
                 className="bg-blue rounded-md shadow-sm border-gray-300 focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"

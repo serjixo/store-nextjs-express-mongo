@@ -1,6 +1,6 @@
-import {useSnapshot} from "valtio";
-import dataState from "@component/store/Store";
-import {useRouter} from "next/router";
+import {useSnapshot} from 'valtio';
+import dataState from '@component/store/Store';
+import {useRouter} from 'next/router';
 
 export default function LinkToBackPage() {
     let snap = useSnapshot(dataState)

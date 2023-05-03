@@ -1,6 +1,6 @@
-import {useSnapshot} from "valtio";
-import paginationState from "@component/store/PaginationStore";
-import dataState from "@component/store/Store";
+import {useSnapshot} from 'valtio';
+import paginationState from '@component/store/PaginationStore';
+import dataState from '@component/store/Store';
 
 export default function PaginationButtons(props) {
     let paginationSnap = useSnapshot(paginationState);

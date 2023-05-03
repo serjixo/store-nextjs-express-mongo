@@ -1,7 +1,7 @@
-import {motion} from "framer-motion";
-import dataState from "@component/store/Store";
-import AddToCartButton from "@component/components/AddToCartButton";
-import Link from "next/link";
+import {motion} from 'framer-motion';
+import dataState from '@component/store/Store';
+import AddToCartButton from '@component/components/AddToCartButton';
+import Link from 'next/link';
 
 export default function ProductCard({product, isOnCart}) {
     function handleSetDetailsProduct(e, product) {
@@ -15,13 +15,13 @@ export default function ProductCard({product, isOnCart}) {
                 scale: 1.03,
                 transition: {duration: 0.5},
             }}
-            className="max-w-sm rounded-lg overflow-hidden shadow-lg
+            className='max-w-sm rounded-lg overflow-hidden shadow-lg
             bg-gradient-to-r from-indigo-500 hover:from-cyan-500  hover:to-blue-500
-             "
+             '
         >
-            <div className="h-64 relative">
-                <img className="w-full h-full absolute top-0 left-0 object-cover object-center"
-                     src={product.imageUrl} alt="product image"/>
+            <div className='h-64 relative'>
+                <img className='w-full h-full absolute top-0 left-0 object-cover object-center'
+                     src={product.imageUrl} alt='product image'/>
             </div>
             <div className="px-6 py-4 ">
                 <div className="font-bold text-xl mb-2 text-white">{product.productName}</div>

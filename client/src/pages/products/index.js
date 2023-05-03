@@ -36,15 +36,13 @@ export default function Products() {
                         <AnimatedText text={'Adventures.'}/>
 
                         <CustomButton
-
                             type='filled'
                             title='Go Back'
                             handleClick={() => dataState.intro = true}
-                            customStyles='w-fit px-4 py-2.5 font-bold text-sm m-5 ml-auto'
+                            customStyles='w-fit px-4 py-2.5 font-bold text-sm m-5 mt-20 ml-auto max-h-10'
                         />
                     </motion.div>
                     <CartLink/>
-
                     <motion.div
                         {...slideAnimation('right')}
                         {...fadeAnimation}

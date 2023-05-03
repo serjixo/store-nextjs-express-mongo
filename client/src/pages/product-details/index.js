@@ -17,9 +17,12 @@ export default function ProductDetails() {
             {...slideAnimation('right')}
             {...fadeAnimation}
         >
+            {/*<img src={productToDetail.imageUrl} alt={'backGRound'} className={'bg-fixed max-h-fit max-w-fit'}/>*/}
             <div className={'h-screen grid grid-cols-1 place-content-around'}>
                 <LinkToBackPage/>
-                <div className='flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden m-10'>
+                <div
+                    className='flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden m-10'
+                >
                     <div className='w-full md:w-1/3'>
                         <div className='relative h-48 md:h-full'>
                             <img src={productToDetail.imageUrl} alt={'Image details'}/>

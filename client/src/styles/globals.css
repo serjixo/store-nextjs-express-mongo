@@ -26,6 +26,6 @@ html {
 }
 
 .head-text-sub {
-    @apply xl:text-[8rem] text-[4rem] xl:leading-[9rem] md:text-[4rem] sm:text-[3rem] leading-[5rem] font-black text-white;
+    @apply xl:text-[7rem] text-[4rem] xl:leading-[9rem] md:text-[4rem] sm:text-[3rem] leading-[5rem] font-black text-white;
 }
 

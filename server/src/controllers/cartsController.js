@@ -11,8 +11,6 @@ export const createCart = async (req, res, next) => {
         }
 
         const cart = new Cart();
-        console.log('cart', cart)
-        console.log('req.body', req.body)
         cart.productIds.push(productId)
         const savedCart = await cart.save();
 

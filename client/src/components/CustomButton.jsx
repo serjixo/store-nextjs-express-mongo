@@ -1,5 +1,5 @@
-import {useSnapshot} from "valtio"
-import dataState from "../store/Store.js"
+import {useSnapshot} from 'valtio'
+import dataState from '../store/Store.js'
 
 export default function CustomButton(props) {
     let snap = useSnapshot(dataState)

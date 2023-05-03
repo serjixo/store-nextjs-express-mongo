@@ -1,4 +1,4 @@
-import {proxy} from "valtio";
+import {proxy} from 'valtio';
 
 const paginationState = proxy({
     currentPage: 1,
