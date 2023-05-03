@@ -1,8 +1,9 @@
-import {useSnapshot} from "valtio";
-import dataState from "../store/Store.jsx";
+import {useSnapshot} from "valtio"
+import dataState from "../store/Store.js"
 
 export default function CustomButton(props) {
-    let snap = useSnapshot(dataState);
+    let snap = useSnapshot(dataState)
+
     const generateStyle = (type) => {
         if (type == 'filled') {
             return {
@@ -19,7 +20,7 @@ export default function CustomButton(props) {
 
     return (
         <button
-            className={`px-2 py-1 flex-1 rounded-md ${props.customStyles}`}
+            className={`px-2 py-1 rounded-md ${props.customStyles}`}
             style={generateStyle(props.type)}
             onClick={props.handleClick}
             disabled={props.disabled}

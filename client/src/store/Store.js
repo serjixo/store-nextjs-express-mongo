@@ -4,6 +4,8 @@ export const dataState = proxy({
     intro: true,
     color: '#81BEF7',
     products: [],
-    cart: [],
+    cartProductsIds: [],
+    cartId: '',
+    productToDetail: ''
 })
 export default dataState

@@ -2,8 +2,9 @@ import * as dotenv from 'dotenv'
 import express from 'express'
 import cors from 'cors'
 import {connectDB} from './src/db/connectDB.js'
-import productsRoutes from "./src/routes/products.routes.js"
-import bodyParser from "body-parser";
+import productsRoutes from './src/routes/products.routes.js'
+import bodyParser from 'body-parser';
+import cartsRoutes from './src/routes/carts.routes.js';
 
 dotenv.config()
 
@@ -17,7 +18,7 @@ app.use(bodyParser.json())
 // app.use(normalizeProductIds)
 
 app.use('/products', productsRoutes)
-
+app.use('/carts', cartsRoutes)
 app.get('/', (req, res) => {
     res.status(200).json({message: 'hello from backend'})
 })

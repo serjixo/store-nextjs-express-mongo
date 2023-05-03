@@ -1,60 +1,46 @@
-import dataState from "@component/store/Store";
-import paginationState from "@component/store/PaginationStore";
+import dataState from '@component/store/Store'
 
-const PRODUCTS_URL = "http://localhost:8080/products";
+const PRODUCTS_URL = 'http://localhost:8080/products'
 
-export async function fetchProducts() {
-    const url = "http://localhost:8080/products";
-    const response = await fetch(url);
 
-    if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-    }
+function handleFetchError(response) {
+    const error = new Error(`HTTP error! status: ${response.status}`)
+    console.error('An error occurred while fetching products:', error)
+    return Promise.reject(error)
+}
 
-    const data = await response.json();
+
+async function handleDataResponse(response) {
+    const data = await response.json()
     dataState.products = data
     return data;
 }
 
-export async function fetchProductsPage(page) {
-    const params = new URLSearchParams({page});
-    const url = `${PRODUCTS_URL}?${params.toString()}`;
-    try {
-        const response = await fetch(url);
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        const data = await response.json();
-        dataState.products = data
-        return data;
-    } catch (error) {
-        console.error('An error occurred while fetching products:', error);
-        throw error;
+async function handleResponse(response) {
+    if (!response.ok) {
+        await handleFetchError(response)
     }
+    const data = await handleDataResponse(response)
+    return data;
 }
 
-export async function fetchProductsFilterName(page, name) {
-    const params = new URLSearchParams({page, name});
-    const url = `${PRODUCTS_URL}/name?${params.toString()}`;
+export async function fetchProducts() {
+    const response = await fetch(PRODUCTS_URL)
+    const data = await handleResponse(response);
+    return data
+}
+
+export async function fetchProductsFilterName(page, name, sortProperty, sortDirection) {
+    const params = new URLSearchParams({page, name, sortProperty, sortDirection})
+    const url = `${PRODUCTS_URL}/name?${params.toString()}`
 
     try {
-        const response = await fetch(url);
+        const response = await fetch(url)
+        const data = await handleResponse(response);
 
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        const data = await response.json();
-        dataState.products = data;
-        // debugger;
-        paginationState.totalPages = data.totalPages
-        paginationState.currentPage = data.page
-
-        return data;
+        return data
     } catch (error) {
-        console.error('An error occurred while fetching products:', error);
-        throw error;
+        console.error('An error occurred while fetching products:', error)
+        throw error
     }
 }

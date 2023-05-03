@@ -66,14 +66,14 @@ export const getProductsSorted = async (req, res) => {
 
 }
 
-export const getProductByName = async (req, res, next) => {
+export const getProductByNameAndSorted = async (req, res, next) => {
     try {
         const {page = 1, limit = 9, name} = req.query
         const skip = (page - 1) * limit
         const query = name ? {productName: {$regex: name, $options: 'i'}} : {}
 
-        const sortField = req.query.sortBy ? req.query.sortBy : 'price';
-        const sortOrder = req.query.sortOrder && req.query.sortOrder.toLowerCase() === 'desc' ? -1 : 1;
+        const sortField = req.query.sortProperty ? req.query.sortProperty : 'productName';
+        const sortOrder = req.query.sortDirection && req.query.sortDirection.toLowerCase() === 'desc' ? -1 : 1;
 
         const products = await Product.find(query)
             .sort({[sortField]: sortOrder})
